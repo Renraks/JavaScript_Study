@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Java Scriptzada</title>
+
+        
+    </head>
+
+    <body>
+        <h1>Curso de JavaScript</h1>
+        <h2>Aplicando JS em HTML</h2>
+        <input 
+            type="text" 
+            placeholder="Teste de precedência"
+            id="nome"
+            disabled="disabled"
+        >
+
+        <script src="meu_script.js"></script>
+
+        <hr/>
+
+        <h2>Variáveis</h2>
+        <p>Tudo estudado nessa parte se encontra em JavaScript dentro do HTML, use o F12 para acessa-lo</p>
+        <script>
+            //Script para a parte de Variáveis
+
+            //String
+            //A encapsulação da string pode ser feita tanto por aspas duplas como por aspas simples
+            var texto = 'Curso de JavaScript'
+
+            //Número
+            //Valores fracionados devem ser separados por ponto
+            var numeroInteiro = -7
+            var numeroFracionado = 11210.75
+
+            //Booleans
+            //Variaveis usadas para atribuir valores de verdadeiro ou falso
+            var provavel = false
+
+            //alert(numeroFracionado) //Serve para abrir um dialog
+            //document.write(texto) //Serve para escrever diretamente no site
+            console.log(numeroInteiro)
+        </script>
+
+        <hr/>
+
+        <h2>Concatenação</h2>
+        <script>
+            var nome= prompt('Digite o seu nome:')
+            var idade= prompt('Digite sua idade:')
+            var idade2= 50
+
+            console.log(idade)
+            console.log(idade2)
+            document.write('<h4> Fala ' + nome + ', ta bão ? To veno aqui que se tem ' +idade+' anos, é memo fi ?</h4>')
+        </script>
+
+        <hr/>
+
+        <h2>Variáveis null e undefineds</h2>
+        
+        <p>Está parte está apenas no console e no Script, usar F12 para visualizar</p>
+        <script>
+
+            //null
+
+            var teste = null
+            //null é usado quando queremos intencionalmente a ausencia de um valor em uma variavel
+
+            //undefined
+
+            var teste2
+            //undefined só pode ser usada em variaveis criadas com var, pois se for criada de outra forma ela será do respectivo
+            //tipo
+
+            console.log(teste)
+            console.log(teste2)
+
+
+        </script>
+
+        <hr/>
+
+        <h2>Desafio A B C</h2>
+
+        <script>
+
+            document.write('A: ' + a + '<br/>')
+            document.write('B: ' + b + '<br/>')
+            document.write('C: ' + c + '<br/>')
+            document.write('<br/>')
+            c = b
+            b = a
+            a = c
+            c = null
+            document.write('A: ' + a + '<br/>')
+            document.write('B: ' + b + '<br/>')
+            document.write('C: ' + c + '<br/>')
+
+        </script>
+    </body>
+</html>
