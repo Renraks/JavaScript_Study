@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+
+    <script>
+        var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+
+        function adicionar()
+        {
+            var item = document.getElementById('insercao').value
+            var dentro = objetos.indexOf(item)
+            if(item === "" )
+            {
+                alert('Informe um valor válido')
+                
+            }
+            else
+            {
+                if(dentro === -1)
+                {
+                    objetos.push(item)
+                    console.log(objetos)
+                    document.getElementById('insercao').value = ""
+                }
+                else
+                {
+                    alert('Objeto já foi adicionado')
+                }
+            }
+        }
+
+        function ordena()
+        {
+            objetos.sort()
+            console.log(objetos)
+        }
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Item" id="insercao"/> <button id="add" onclick="adicionar()">Adicionar</button> <button id="ord" onclick="ordena()">Ordenar</button>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+// Boa parte do JavaScript está localizado dentro do código HTML deste programa

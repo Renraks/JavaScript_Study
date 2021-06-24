@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Questão 1
+        document.write('<h2> Questão 1 </h2>')
+        var lista_frutas = Array()
+
+        lista_frutas[0] = 'Banana'
+        lista_frutas[1] = 'Maçã'
+        lista_frutas[2] = 'Morango'
+        lista_frutas[3] = 'Uva'
+
+        for(var y = 0; y < lista_frutas.length; y++)
+        {
+            document.write(lista_frutas[y]+ '<br />')
+        }
+        document.write('<hr/>')
+        document.write('<h2> Questão 2 </h2>')
+        //Questão 2
+        for(var y = 1; y <= 10; y++)
+        {
+            for(var x=1; x<= 10; x++)
+            {
+                document.write(y +' x ' + x + ' = ' + (y * x) + '<br/>')
+            }
+            document.write('<hr/>')
+        }
+        
+        var y = 1
+        while(y <= 10)
+        {   
+            var x = 1
+            while(x <= 10)
+            {
+                document.write(y + ' x ' + x + ' = ' + (y * x) + '<br/>')
+                x++
+            }
+            document.write('<hr/>')
+            y++
+        }
+        
+        document.write('<h1> Final </h1>')
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

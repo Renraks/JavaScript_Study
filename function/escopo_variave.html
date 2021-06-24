@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScriptzada2</title>
+    <title>Document</title>
 </head>
 <body>
-    <h2>Ifs e Elses</h2>
-    <p>Verificar o script com o F12 se necessario</p>
     <script>
+        //3 escopos: global, função e bloco
 
-        var nota = prompt('Nota: ')
-        var media = 7
+        var serie = 'One Piece'
 
-        if(nota >= media)
+        if(true)
         {
-            document.write('Aprovado')
+            document.write(serie)
         }
-        else
+
+        document.write('<br />')
+        function x()
         {
-            document.write('Reprovado')
+            document.write(serie)
         }
+
+        x()
     </script>
 </body>
 </html>
